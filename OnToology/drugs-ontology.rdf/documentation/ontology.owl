@@ -1,0 +1,927 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#"
+     xml:base="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:Drug="http://dbpedia.org/ontology/Drug/"
+     xmlns:doid="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#doid:"
+     xmlns:dron="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://open.vocab.org/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ontology="http://dbpedia.org/ontology/"
+     xmlns:powder-s="http://www.w3.org/2007/05/powder-s#"
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#"
+     xmlns:dppedia-owl="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dppedia-owl:">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology">
+        <rdfs:seeAlso>This ontology is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+See: https://creativecommons.org/licenses/by/4.0/</rdfs:seeAlso>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/bioavailability -->
+
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/bioavailability">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Drug"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/chEBI -->
+
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/chEBI">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Drug"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/drugs.com -->
+
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/drugs.com">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Drug"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/iupacName -->
+
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/iupacName">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Drug"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Drug/boilingPoint -->
+
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/Drug/boilingPoint">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Drug"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Drug/meltingPoint -->
+
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/Drug/meltingPoint">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Drug"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://open.vocab.org/terms/defines -->
+
+
+    <owl:AnnotationProperty rdf:about="http://open.vocab.org/terms/defines"/>
+    
+
+
+    <!-- http://open.vocab.org/terms/describes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://open.vocab.org/terms/describes"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncbitaxon#has_rank -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ncbitaxon#has_rank"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.w3.org/2007/05/powder-s#describedby -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2007/05/powder-s#describedby"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_4#isCausedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DOID_4#isCausedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#doid:causesDisease"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2#NCBITaxon_10239"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2#NCBITaxon_2"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2#NCBITaxon_4751"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_4#isTreatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DOID_4#isTreatedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#doid:treats"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#doid:causesDisease -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#doid:causesDisease">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2#NCBITaxon_10239"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2#NCBITaxon_2"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2#NCBITaxon_4751"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#doid:treats -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#doid:treats">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dppedia-owl:interactsWith -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dppedia-owl:interactsWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:DosageForm -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:DosageForm">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:hasActiveIngredient"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Drug#administrationRoute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:hasActiveIngredient -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:hasActiveIngredient">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/dron.owl#ActiveIngredient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:hasBiologicalEntityTarget -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:hasBiologicalEntityTarget">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/dron.owl#BiologicalEntityTarget"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:hasDosage -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:hasDosage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Dosage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:hasPrice -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:hasPrice">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/dron.owl#price"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:hasSideEffect -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:hasSideEffect">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/dron.owl#sideEffect"/>
+        <rdfs:comment>Represents the side effects associated with a drug.</rdfs:comment>
+        <rdfs:label>has side effect</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:hasTherapeuticEffect -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:hasTherapeuticEffect">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/dron.owl#TherapeuticFunction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:manufacturedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:manufacturedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/dron.owl#PharmaceuticalManufacturer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:typeOfDrug -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:typeOfDrug">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Clasification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Dosage"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/dron.owl#price"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/Drug#administrationRoute -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Drug#administrationRoute">
+        <rdfs:label>Administration Route</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_4 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_4">
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+        <rdfs:comment>A disease is an abnormal condition affecting the body of an organism, often characterized by specific signs and symptoms. Diseases can be caused by external factors (e.g., pathogens) or internal dysfunctions (e.g., autoimmune disorders).</rdfs:comment>
+        <rdfs:label>Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2#NCBITaxon_10239 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2#NCBITaxon_10239">
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2#NCBITaxon_2"/>
+        <rdfs:comment>A virus is a microscopic infectious agent that replicates only inside the living cells of an organism. Viruses can infect all types of life forms, including animals, plants, and microorganisms such as bacteria and archaea.</rdfs:comment>
+        <rdfs:label>Virus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2#NCBITaxon_2 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2#NCBITaxon_2">
+        <rdfs:comment>Bacteria are single-celled microorganisms that exist in diverse environments. While some bacteria are beneficial and essential for processes like digestion, others can cause diseases in humans, animals, and plants.</rdfs:comment>
+        <rdfs:label>Bacteria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2#NCBITaxon_4751 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2#NCBITaxon_4751">
+        <rdfs:comment>Fungi are eukaryotic organisms that include yeasts, molds, and mushrooms. They play essential roles in ecosystems as decomposers, but some fungi can cause infections in humans, animals, and plants.</rdfs:comment>
+        <rdfs:label>Fungi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dron.owl#ActiveIngredient -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dron.owl#ActiveIngredient"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dron.owl#AnalgesicFunction -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dron.owl#AnalgesicFunction">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dron.owl#TherapeuticFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dron.owl#AntiInflammatoryFunction -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dron.owl#AntiInflammatoryFunction">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dron.owl#TherapeuticFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dron.owl#AntidepressantFunction -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dron.owl#AntidepressantFunction">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dron.owl#TherapeuticFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dron.owl#AntipyreticFunction -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dron.owl#AntipyreticFunction">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dron.owl#TherapeuticFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dron.owl#BiologicalEntityTarget -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dron.owl#BiologicalEntityTarget"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dron.owl#BrandNameDrug -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dron.owl#BrandNameDrug">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dron.owl#Capsule -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dron.owl#Capsule">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Drug#administrationRoute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dron.owl#Clasification -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dron.owl#Clasification"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dron.owl#Dosage -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dron.owl#Dosage"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dron.owl#Drug -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dron.owl#Drug">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:hasActiveIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/dron.owl#ActiveIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A chemical substance used to treat, cure, or prevent disease.</rdfs:comment>
+        <rdfs:label>Drug</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dron.owl#GenericDrug -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dron.owl#GenericDrug">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dron.owl#Injectable -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dron.owl#Injectable">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Drug#administrationRoute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dron.owl#Liquid -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dron.owl#Liquid">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Drug#administrationRoute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dron.owl#PharmaceuticalManufacturer -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dron.owl#PharmaceuticalManufacturer"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dron.owl#Tablet -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dron.owl#Tablet">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Drug#administrationRoute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dron.owl#TherapeuticFunction -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dron.owl#TherapeuticFunction"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dron.owl#mechanismOfAction -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dron.owl#mechanismOfAction"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dron.owl#price -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dron.owl#price">
+        <rdfs:label>Price</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dron.owl#sideEffect -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dron.owl#sideEffect"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Amoxicillin -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Amoxicillin">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+        <dron:DosageForm rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#oral_capsule"/>
+        <dron:DosageForm rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#oral_tablet"/>
+        <dron:DosageForm rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#oral_tablet_chewable"/>
+        <dron:DosageForm rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#oral_tablet_extended_release"/>
+        <dron:manufacturedBy rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#GSK"/>
+        <dron:manufacturedBy rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Novartis"/>
+        <dron:manufacturedBy rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Pfizer"/>
+        <dron:manufacturedBy rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Sanofi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#AntiInflammatory -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#AntiInflammatory">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#AntiInflammatoryFunction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Atorvastatin -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Atorvastatin">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+        <dron:hasSideEffect rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#headache"/>
+        <dron:hasSideEffect rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#hoarseness"/>
+        <dron:hasSideEffect rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#lower_back_or_side_pain"/>
+        <dron:hasSideEffect rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#painful_or_difficult_urination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Clonazepam -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Clonazepam">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+        <dron:hasDosage rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#0.125mg"/>
+        <dron:hasDosage rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#0.25mg"/>
+        <dron:hasDosage rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#0.5mg"/>
+        <dron:hasDosage rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#1mg"/>
+        <dron:hasDosage rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#2mg"/>
+        <dron:hasTherapeuticEffect rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#antidepressant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#GSK -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#GSK">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#PharmaceuticalManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Ibuprofen -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Ibuprofen">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+        <dron:hasPrice rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#5.20€"/>
+        <dron:hasTherapeuticEffect rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#AntiInflammatory"/>
+        <rdfs:comment>A commonly used anti-inflammatory drug.</rdfs:comment>
+        <rdfs:label>Ibuprofen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Inhibit_prostaglandin_synthesis -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Inhibit_prostaglandin_synthesis">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#mechanismOfAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Naproxen -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Naproxen">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+        <dron:typeOfDrug rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Nonsteroidal_anti-inflammatory_drugs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Nonsteroidal_anti-inflammatory_drugs -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Nonsteroidal_anti-inflammatory_drugs">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Clasification"/>
+        <doid:causesDisease rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#fever"/>
+        <doid:causesDisease rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#influenza_virus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Novartis -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Novartis">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#PharmaceuticalManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Pain_relief -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Pain_relief">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#AnalgesicFunction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Paracetamol -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Paracetamol">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Drug"/>
+        <doid:treats rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#fever"/>
+        <dppedia-owl:interactsWith rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Ibuprofen"/>
+        <dppedia-owl:interactsWith rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Naproxen"/>
+        <dron:hasActiveIngredient rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#paracetamol"/>
+        <dron:hasSideEffect rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#nausea"/>
+        <dron:hasTherapeuticEffect rdf:resource="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Pain_relief"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Pfizer -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Pfizer">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#PharmaceuticalManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Sanofi -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#Sanofi">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#PharmaceuticalManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#antidepressant -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#antidepressant">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#AntidepressantFunction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#fever -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#fever">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#headache -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#headache">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#sideEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#hoarseness -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#hoarseness">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#sideEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#influenza_virus -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#influenza_virus">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2#NCBITaxon_10239"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#lower_back_or_side_pain -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#lower_back_or_side_pain">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#sideEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#nausea -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#nausea">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#sideEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#oral_capsule -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#oral_capsule">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Capsule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#oral_tablet -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#oral_tablet">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Tablet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#oral_tablet_chewable -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#oral_tablet_chewable">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Tablet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#oral_tablet_extended_release -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#oral_tablet_extended_release">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Tablet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#painful_or_difficult_urination -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#painful_or_difficult_urination">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#sideEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#paracetamol -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#paracetamol">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#0.125mg -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#0.125mg">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Dosage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#0.25mg -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#0.25mg">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Dosage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#0.5mg -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#0.5mg">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Dosage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#1mg -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#1mg">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Dosage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#2mg -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#2mg">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#Dosage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#5.20€ -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#5.20€">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/dron.owl#price"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
