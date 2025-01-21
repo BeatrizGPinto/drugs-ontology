@@ -1,0 +1,16 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "dron:AntiInflammatoryFunction" "dron:Injectable" "dron:Tablet" "dron:BrandNameDrug" "dron:Capsule" "dron:AntipyreticFunction" "dbpedia-owl:administrationRoute" "dron:AntidepressantFunction" "dron:Drug" "dron:Liquid" "dron:GenericDrug" "dron:TherapeuticFunction" "dron:AnalgesicFunction" ; /*classes style*/
+	"dron:AnalgesicFunction" -> "dron:TherapeuticFunction" [ label = "rdfs:subClassOf" ];
+	"dron:BrandNameDrug" -> "dron:Drug" [ label = "rdfs:subClassOf" ];
+	"dron:Injectable" -> "dbpedia-owl:administrationRoute" [ label = "rdfs:subClassOf" ];
+	"dron:AntiInflammatoryFunction" -> "dron:TherapeuticFunction" [ label = "rdfs:subClassOf" ];
+	"dron:Liquid" -> "dbpedia-owl:administrationRoute" [ label = "rdfs:subClassOf" ];
+	"dron:AntipyreticFunction" -> "dron:TherapeuticFunction" [ label = "rdfs:subClassOf" ];
+	"dron:GenericDrug" -> "dron:Drug" [ label = "rdfs:subClassOf" ];
+	"dron:Tablet" -> "dbpedia-owl:administrationRoute" [ label = "rdfs:subClassOf" ];
+	"dron:Capsule" -> "dbpedia-owl:administrationRoute" [ label = "rdfs:subClassOf" ];
+	"dron:AntidepressantFunction" -> "dron:TherapeuticFunction" [ label = "rdfs:subClassOf" ];
+
+}

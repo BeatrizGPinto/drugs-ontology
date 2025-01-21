@@ -1,0 +1,197 @@
+{
+  "@context" : {
+    "causesDisease" : {
+      "@id" : "http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#doid:causesDisease",
+      "@type" : "@id"
+    },
+    "hasPrice" : {
+      "@id" : "http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:hasPrice",
+      "@type" : "@id"
+    },
+    "iupacName" : {
+      "@id" : "http://dbpedia.org/ontology/iupacName"
+    },
+    "sideEffect" : {
+      "@id" : "http://purl.obolibrary.org/obo/dron.owl#sideEffect"
+    },
+    "TherapeuticFunction" : {
+      "@id" : "http://purl.obolibrary.org/obo/dron.owl#TherapeuticFunction"
+    },
+    "BiologicalEntityTarget" : {
+      "@id" : "http://purl.obolibrary.org/obo/dron.owl#BiologicalEntityTarget"
+    },
+    "hasExactSynonym" : {
+      "@id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"
+    },
+    "BrandNameDrug" : {
+      "@id" : "http://purl.obolibrary.org/obo/dron.owl#BrandNameDrug"
+    },
+    "describes" : {
+      "@id" : "http://open.vocab.org/terms/describes"
+    },
+    "hasActiveIngredient" : {
+      "@id" : "http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:hasActiveIngredient",
+      "@type" : "@id"
+    },
+    "hasSideEffect" : {
+      "@id" : "http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:hasSideEffect",
+      "@type" : "@id"
+    },
+    "Capsule" : {
+      "@id" : "http://purl.obolibrary.org/obo/dron.owl#Capsule"
+    },
+    "Tablet" : {
+      "@id" : "http://purl.obolibrary.org/obo/dron.owl#Tablet"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "NCBITaxon_10239" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCBITaxon_2#NCBITaxon_10239"
+    },
+    "isTreatedBy" : {
+      "@id" : "http://purl.obolibrary.org/obo/DOID_4#isTreatedBy",
+      "@type" : "@id"
+    },
+    "AntiInflammatoryFunction" : {
+      "@id" : "http://purl.obolibrary.org/obo/dron.owl#AntiInflammatoryFunction"
+    },
+    "hasBiologicalEntityTarget" : {
+      "@id" : "http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:hasBiologicalEntityTarget",
+      "@type" : "@id"
+    },
+    "hasTherapeuticEffect" : {
+      "@id" : "http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:hasTherapeuticEffect",
+      "@type" : "@id"
+    },
+    "isCausedBy" : {
+      "@id" : "http://purl.obolibrary.org/obo/DOID_4#isCausedBy",
+      "@type" : "@id"
+    },
+    "AnalgesicFunction" : {
+      "@id" : "http://purl.obolibrary.org/obo/dron.owl#AnalgesicFunction"
+    },
+    "manufacturedBy" : {
+      "@id" : "http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:manufacturedBy",
+      "@type" : "@id"
+    },
+    "typeOfDrug" : {
+      "@id" : "http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:typeOfDrug",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Clasification" : {
+      "@id" : "http://purl.obolibrary.org/obo/dron.owl#Clasification"
+    },
+    "Dosage" : {
+      "@id" : "http://purl.obolibrary.org/obo/dron.owl#Dosage"
+    },
+    "NCBITaxon_2" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCBITaxon_2#NCBITaxon_2"
+    },
+    "defines" : {
+      "@id" : "http://open.vocab.org/terms/defines"
+    },
+    "boilingPoint" : {
+      "@id" : "http://dbpedia.org/ontology/Drug/boilingPoint"
+    },
+    "GenericDrug" : {
+      "@id" : "http://purl.obolibrary.org/obo/dron.owl#GenericDrug"
+    },
+    "ActiveIngredient" : {
+      "@id" : "http://purl.obolibrary.org/obo/dron.owl#ActiveIngredient"
+    },
+    "Drug" : {
+      "@id" : "http://purl.obolibrary.org/obo/dron.owl#Drug"
+    },
+    "hasRelatedSynonym" : {
+      "@id" : "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"
+    },
+    "bioavailability" : {
+      "@id" : "http://dbpedia.org/ontology/bioavailability"
+    },
+    "DOID_4" : {
+      "@id" : "http://purl.obolibrary.org/obo/DOID_4"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "describedby" : {
+      "@id" : "http://www.w3.org/2007/05/powder-s#describedby"
+    },
+    "treats" : {
+      "@id" : "http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#doid:treats",
+      "@type" : "@id"
+    },
+    "wasDerivedFrom" : {
+      "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom"
+    },
+    "chEBI" : {
+      "@id" : "http://dbpedia.org/ontology/chEBI"
+    },
+    "hasOBONamespace" : {
+      "@id" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"
+    },
+    "hasDosage" : {
+      "@id" : "http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:hasDosage",
+      "@type" : "@id"
+    },
+    "AntidepressantFunction" : {
+      "@id" : "http://purl.obolibrary.org/obo/dron.owl#AntidepressantFunction"
+    },
+    "mechanismOfAction" : {
+      "@id" : "http://purl.obolibrary.org/obo/dron.owl#mechanismOfAction"
+    },
+    "Injectable" : {
+      "@id" : "http://purl.obolibrary.org/obo/dron.owl#Injectable"
+    },
+    "meltingPoint" : {
+      "@id" : "http://dbpedia.org/ontology/Drug/meltingPoint"
+    },
+    "interactsWith" : {
+      "@id" : "http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dppedia-owl:interactsWith",
+      "@type" : "@id"
+    },
+    "PharmaceuticalManufacturer" : {
+      "@id" : "http://purl.obolibrary.org/obo/dron.owl#PharmaceuticalManufacturer"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "AntipyreticFunction" : {
+      "@id" : "http://purl.obolibrary.org/obo/dron.owl#AntipyreticFunction"
+    },
+    "administrationRoute" : {
+      "@id" : "http://dbpedia.org/ontology/Drug#administrationRoute"
+    },
+    "drugs.com" : {
+      "@id" : "http://dbpedia.org/ontology/drugs.com"
+    },
+    "has_rank" : {
+      "@id" : "http://purl.obolibrary.org/obo/ncbitaxon#has_rank"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "price" : {
+      "@id" : "http://purl.obolibrary.org/obo/dron.owl#price"
+    },
+    "hasDbXref" : {
+      "@id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref"
+    },
+    "NCBITaxon_4751" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCBITaxon_2#NCBITaxon_4751"
+    },
+    "DosageForm" : {
+      "@id" : "http://www.semanticweb.org/geman/ontologies/2025/0/drugs-ontology#dron:DosageForm",
+      "@type" : "@id"
+    },
+    "Liquid" : {
+      "@id" : "http://purl.obolibrary.org/obo/dron.owl#Liquid"
+    }
+  }
+}
